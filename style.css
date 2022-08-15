@@ -4,6 +4,7 @@ body, html {
     left: 0;
     padding: 0;
     background-color: rgb(145, 145, 145);
+    overflow-x: hidden;
   }
   h1 {
       color: #30ff00;
@@ -29,9 +30,18 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 80px;
     color: darkorange;
     text-shadow: 0 0 10px #000;
+  }
+  @media screen and (max-width: 400px) {
+    .background-img {
+      font-size: 3rem;
+    }
+  }
+  @media screen and (min-width: 401px) {
+    .background-img {
+      font-size: 4rem;
+    }
   }
   .top-h2 {
     margin-top: -100px;
@@ -60,16 +70,6 @@ body, html {
     margin-left: auto;
     margin-right: auto;
   }
-
-
-  /*img*/
-/* .img_div {
-  display: block;
-  margin: auto;
-  text-align: center;
-  width: 90vw;
-  max-width: 1024px;
-} */
 .youtube {
   width: 100%;
   aspect-ratio: 16 / 9;
